@@ -22,35 +22,20 @@ export async function POST(req: Request) {
             const nodemailer = require("nodemailer");
 
             const transporter = nodemailer.createTransport({
-                service: "gmail",
+                host: process.env.SMTP_HOST || "smtp.hostinger.com",
+                port: parseInt(process.env.SMTP_PORT || "465"),
+                secure: true, // true for 465, false for other ports
                 auth: {
                     user: process.env.EMAIL_USER,
                     pass: process.env.EMAIL_PASS,
                 },
             });
 
-            const mailOptions = {
-                from: process.env.EMAIL_USER,
-                to: "abhinavmbhatt@gmail.com",
-                subject: `New Discovery Call Inquiry: ${body.name}`,
-                text: `
-Name: ${body.name}
-Email: ${body.email}
-Role: ${body.role}
-Company: ${body.company || "N/A"}
-Budget: ${body.budget}
-Timeline: ${body.timeline || "N/A"}
-
-Message:
-${body.message}
-            `,
-            };
-
             const userConfirmationOptions = {
                 from: process.env.EMAIL_USER,
                 to: body.email,
-                bcc: "abhinavmbhatt@gmail.com", // Admin gets a copy
-                subject: "We received your inquiry - AantrrPantrr",
+                bcc: process.env.ADMIN_EMAIL, // Admin gets a hidden copy
+                subject: "We received your inquiry - ATIMIS",
                 html: `
 <div style="font-family: sans-serif; color: #111; line-height: 1.6;">
     <p>Hi ${body.name.split(" ")[0]},</p>
@@ -73,20 +58,17 @@ ${body.message}
 
     <p style="margin-top: 24px;">Within <strong>48 hours</strong>, our team will complete an initial evaluation and get back to you with next steps for a technical discussion.</p>
     
-    <p>Thank you for considering AantrrPantrr. We look forward to reviewing your request.</p>
+    <p>Thank you for considering ATIMIS. We look forward to reviewing your request.</p>
     
     <p style="margin-top: 32px;">Best regards,<br>
-    <strong>Team AantrrPantrr</strong><br>
-    <span style="color: #666; font-size: 0.9em;">Senior Engineering & AI Systems</span></p>
+    <strong>Team ATIMIS</strong><br>
+    <span style="color: #666; font-size: 0.9em;">Production Grade Systems</span></p>
 </div>
                 `,
             };
 
-            // Send both emails
-            await Promise.all([
-                transporter.sendMail(mailOptions),
-                transporter.sendMail(userConfirmationOptions)
-            ]);
+            // Send email
+            await transporter.sendMail(userConfirmationOptions);
 
             console.log("Admin notification and User confirmation sent");
 

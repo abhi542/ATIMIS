@@ -7,19 +7,26 @@ export default function ServicesPage() {
     return (
         <div className="min-h-screen bg-black text-white pb-24">
             {/* Header */}
-            <section className="pt-32 pb-16 px-6 border-b border-white/10 text-center">
-                <div className="container mx-auto max-w-5xl">
+            <section className="pt-32 pb-16 px-6 border-b border-white/10 text-center relative overflow-hidden">
+                {/* Watermark */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center select-none pointer-events-none">
+                    <h1 className="text-[15vw] md:text-[18vw] font-black text-white/5 tracking-tighter leading-none">
+                        ATIMIS
+                    </h1>
+                </div>
+
+                <div className="container mx-auto max-w-5xl relative z-10">
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
                         Our Services
                     </h1>
-                    <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+                    <p className="text-xl text-zinc-400 max-w-2xl mx-auto min-h-[3.5rem] flex items-center justify-center">
                         Specialized engineering for scalable systems.
                     </p>
                 </div>
             </section>
 
             {/* Service List */}
-            <section className="container mx-auto max-w-5xl px-6 pt-16 space-y-24">
+            <section className="container mx-auto max-w-5xl px-6 pt-16 space-y-24 relative z-10">
 
                 {/* Service 1: AI & RAG */}
                 <div className="grid md:grid-cols-2 gap-12 items-start border-l border-white/10 pl-8 md:pl-12 relative">

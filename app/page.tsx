@@ -17,9 +17,13 @@ export default function Home() {
             Accepting New Engineering Partners for Q3
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1]">
-            Building the Extraordinary.
+          <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter text-white mb-2 leading-none select-none">
+            ATIMIS
           </h1>
+
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 leading-[1.1] text-zinc-100">
+            Building the Extraordinary.
+          </h2>
 
           <p className="text-xl md:text-2xl text-zinc-300 max-w-2xl leading-relaxed mb-12">
             Engineering AI systems, internal tools, and platforms designed to operate reliably in real-world production environments.

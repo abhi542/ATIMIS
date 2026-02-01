@@ -4,13 +4,25 @@ import { Button } from "@/components/ui/button";
 export default function AboutPage() {
     return (
         <div className="min-h-screen bg-black text-white pb-24">
-            <section className="pt-24 pb-24 px-6 container mx-auto max-w-5xl">
-                <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">How We Engineer</h1>
-                    <p className="text-xl text-zinc-400">
+            {/* Header */}
+            <section className="pt-32 pb-16 px-6 border-b border-white/10 text-center relative overflow-hidden">
+                {/* Watermark */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center select-none pointer-events-none">
+                    <h1 className="text-[15vw] md:text-[18vw] font-black text-white/5 tracking-tighter leading-none">
+                        ATIMIS
+                    </h1>
+                </div>
+
+                <div className="container mx-auto max-w-5xl relative z-10">
+                    <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">How We Engineer</h1>
+                    <p className="text-xl text-zinc-400 max-w-2xl mx-auto min-h-[3.5rem] flex items-center justify-center">
                         We learned these principles the hard way: by seeing clever systems fail in production.
                     </p>
                 </div>
+            </section>
+
+            {/* Principles Grid */}
+            <section className="container mx-auto max-w-5xl px-6 pt-16 relative z-10">
 
                 <div className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
 

@@ -6,19 +6,24 @@ export default function WorkPage() {
     return (
         <div className="min-h-screen bg-black text-white pb-24">
             {/* Meta Header */}
-            <section className="pt-32 pb-24 px-6 border-b border-white/10 bg-zinc-900/20">
-                <div className="container mx-auto max-w-4xl text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-8">Our Work</h1>
-                    <div className="space-y-6 text-xl text-zinc-400 max-w-2xl mx-auto">
-                        <p>
-                            Production systems, running at scale.
-                        </p>
-                    </div>
+            <section className="pt-32 pb-16 px-6 border-b border-white/10 text-center relative overflow-hidden">
+                {/* Watermark */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center select-none pointer-events-none">
+                    <h1 className="text-[15vw] md:text-[18vw] font-black text-white/5 tracking-tighter leading-none">
+                        ATIMIS
+                    </h1>
+                </div>
+
+                <div className="container mx-auto max-w-5xl relative z-10">
+                    <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">Our Work</h1>
+                    <p className="text-xl text-zinc-400 max-w-2xl mx-auto min-h-[3.5rem] flex items-center justify-center">
+                        Production systems, running at scale.
+                    </p>
                 </div>
             </section>
 
             {/* Case Studies */}
-            <section className="container mx-auto max-w-5xl px-6 pt-24 space-y-48">
+            <section className="container mx-auto max-w-5xl px-6 pt-24 space-y-48 relative z-10">
 
                 {/* Project 1: Enterprise RAG */}
                 <div className="group">

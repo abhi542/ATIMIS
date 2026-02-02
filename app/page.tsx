@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, ShieldCheck, Zap } from "lucide-react";
+import LightPillar from "@/components/ui/LightPillar";
 
 export default function Home() {
   return (
@@ -8,14 +9,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative pt-40 pb-32 px-6 border-b border-white/10 overflow-hidden">
-        <div className="container mx-auto max-w-5xl relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs text-zinc-400 mb-8">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-            </span>
-            Accepting New Engineering Partners for Q3
-          </div>
+        <div className="container mx-auto max-w-5xl relative z-10 flex flex-col items-center text-center">
 
           <h1 className="text-7xl md:text-[10rem] font-black tracking-tighter text-white mb-2 leading-none select-none">
             ATIMIS
@@ -29,7 +23,7 @@ export default function Home() {
             Engineering AI systems, internal tools, and platforms designed to operate reliably in real-world production environments.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
               <Button size="lg" className="text-base px-8 py-7 rounded-full bg-white text-black hover:bg-zinc-200 font-semibold w-full sm:w-auto">
                 Get Started
@@ -44,8 +38,24 @@ export default function Home() {
         </div>
 
         {/* Background Grid */}
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
+        {/* Background Grid */}
+        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none z-[1]"></div>
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <LightPillar
+            topColor="#5227FF"
+            bottomColor="#FF9FFC"
+            intensity={1.3}
+            rotationSpeed={0.3}
+            glowAmount={0.002}
+            pillarWidth={2}
+            pillarHeight={0.2}
+            noiseIntensity={0.5}
+            pillarRotation={25}
+            interactive={false}
+            mixBlendMode="screen"
+            quality="high"
+          />
+        </div>
       </section>
 
       {/* Social Proof (Subtle) */}
@@ -68,8 +78,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-12">
 
             <div className="space-y-4 group">
-              <div className="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center group-hover:border-white/20 transition-colors">
-                <Zap className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center group-hover:bg-blue-500/20 group-hover:border-blue-500/40 transition-all duration-300">
+                <Zap className="w-6 h-6 text-blue-400 group-hover:text-blue-300 transition-colors" />
               </div>
               <h3 className="text-xl font-bold text-white">Scope for Outcomes</h3>
               <p className="text-zinc-400 leading-relaxed">
@@ -78,8 +88,8 @@ export default function Home() {
             </div>
 
             <div className="space-y-4 group">
-              <div className="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center group-hover:border-white/20 transition-colors">
-                <ShieldCheck className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center group-hover:bg-amber-500/20 group-hover:border-amber-500/40 transition-all duration-300">
+                <ShieldCheck className="w-6 h-6 text-amber-400 group-hover:text-amber-300 transition-colors" />
               </div>
               <h3 className="text-xl font-bold text-white">Design for Failure</h3>
               <p className="text-zinc-400 leading-relaxed">
@@ -88,8 +98,8 @@ export default function Home() {
             </div>
 
             <div className="space-y-4 group">
-              <div className="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center group-hover:border-white/20 transition-colors">
-                <CheckCircle2 className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center group-hover:bg-emerald-500/20 group-hover:border-emerald-500/40 transition-all duration-300">
+                <CheckCircle2 className="w-6 h-6 text-emerald-400 group-hover:text-emerald-300 transition-colors" />
               </div>
               <h3 className="text-xl font-bold text-white">Shipped Milestones</h3>
               <p className="text-zinc-400 leading-relaxed">

@@ -42,19 +42,19 @@ export default function ServicesPage() {
                         <div className="space-y-6 text-zinc-400 text-lg leading-relaxed">
                             <div>
                                 <strong className="text-zinc-200 block mb-1">Who this is for</strong>
-                                CTOs deploying LLMs into regulated workflows where accuracy is non-negotiable.
+                                Engineering teams deploying LLMs into regulated workflows where accuracy is non-negotiable.
                             </div>
                             <div>
-                                <strong className="text-zinc-200 block mb-1">The Real Pain</strong>
-                                Standard RAG pipelines hallucinate and lack auditability. You cannot put a probabilistic &quot;demo&quot; in front of enterprise customers who demand deterministic answers.
+                                <strong className="text-zinc-200 block mb-1">The Challenge</strong>
+                                Probabilistic models in precision-driven industries create liability. Standard RAG pipelines lack the auditability required for enterprise regulatory standards.
                             </div>
                             <div>
                                 <strong className="text-zinc-200 block mb-1">What We Build</strong>
-                                Deterministic retrieval systems. Strict citation enforcement. Air-gapped deployment capabilities. We replace opaque logic with observable reasoning steps.
+                                Deterministic retrieval systems with strict citation enforcement. Air-gapped deployment capable. We replace opaque logic with observable reasoning steps.
                             </div>
                             <div className="pt-4 border-t border-zinc-800">
                                 <strong className="text-zinc-200 block mb-1">Why this approach works</strong>
-                                We treat LLMs as untrusted components, wrapping them in rigid validation layers. Safety comes from the architecture, not the model.
+                                We treat LLMs as untrusted components, wrapping them in rigid validation layers. Reliability comes from the system architecture, ensuring safety by design.
                             </div>
                         </div>
                     </div>
@@ -84,23 +84,23 @@ export default function ServicesPage() {
                         <div className="space-y-6 text-zinc-400 text-lg leading-relaxed">
                             <div>
                                 <strong className="text-zinc-200 block mb-1">Who this is for</strong>
-                                Operations leads drowning in spreadsheets and manual data entry that creates business risk.
+                                Operations teams managing critical data workflows and business requirements.
                             </div>
                             <div>
-                                <strong className="text-zinc-200 block mb-1">The Real Pain</strong>
-                                Human error in critical workflows creates liability. Spreadsheets don&apos;t have type safety, access logs, or approval gates.
+                                <strong className="text-zinc-200 block mb-1">The Challenge</strong>
+                                Manual data entry and spreadsheet management introduce human error and liability risks. Critical processes lack type safety and access controls.
                             </div>
                             <div>
                                 <strong className="text-zinc-200 block mb-1">What We Build</strong>
-                                Enforced workflow engines. Systems that physically prevent valid-but-incorrect states. Multi-step approvals with immutable audit trails.
+                                Enforced workflow engines with type-safe state management. Multi-step approval systems with immutable audit trails to prevent invalid states.
                             </div>
                             <div className="pt-4 border-t border-zinc-800">
                                 <strong className="text-zinc-200 block mb-1">Why this approach works</strong>
-                                We don&apos;t just digitize forms. We encode your business rules into the software schema, making compliance the path of least resistance.
+                                We encode business rules directly into the software schema. Compliance becomes the path of least resistance, reducing operational risk by design.
                             </div>
                         </div>
                     </div>
-                    <div className="bg-zinc-900/50 p-8 rounded-lg border border-white/5 space-y-6">
+                    {/* <div className="bg-zinc-900/50 p-8 rounded-lg border border-white/5 space-y-6">
                         <h4 className="text-sm font-bold uppercase tracking-widest text-zinc-500">Tech Stack</h4>
                         <div className="flex flex-wrap gap-2">
                             {["ReTool", "Next.js", "Temporal", "Supabase", "Prisma", "Zod"].map(tech => (
@@ -109,7 +109,7 @@ export default function ServicesPage() {
                                 </span>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Service 3: Backend & Data */}
@@ -126,23 +126,23 @@ export default function ServicesPage() {
                         <div className="space-y-6 text-zinc-400 text-lg leading-relaxed">
                             <div>
                                 <strong className="text-zinc-200 block mb-1">Who this is for</strong>
-                                Platforms hitting the limits of their MVP architecture.
+                                Scale-ups where initial architectural choices have become growth bottlenecks.
                             </div>
                             <div>
-                                <strong className="text-zinc-200 block mb-1">The Real Pain</strong>
-                                Database locks, slow queries, and race conditions are killing user trust. You need to scale without rewriting everything from scratch.
+                                <strong className="text-zinc-200 block mb-1">The Challenge</strong>
+                                Racing conditions, database locks, and slow queries degrade user trust. Scaling requires architectural precision, not just more resource allocation.
                             </div>
                             <div>
                                 <strong className="text-zinc-200 block mb-1">What We Build</strong>
-                                High-throughput event queues. Idempotent API layers. Read-heavy caching strategies that don&apos;t serve stale data.
+                                High-throughput event queues and idempotent API layers. Read-heavy caching strategies ensuring data consistency under load.
                             </div>
                             <div className="pt-4 border-t border-zinc-800">
                                 <strong className="text-zinc-200 block mb-1">Why this approach works</strong>
-                                Performance is a feature. We design for the 99th percentile latency, ensuring your system holds up under unpredictable load spikes.
+                                We design for predictable latency at scale. Your system remains stable and responsive even during unpredictable usage spikes.
                             </div>
                         </div>
                     </div>
-                    <div className="bg-zinc-900/50 p-8 rounded-lg border border-white/5 space-y-6">
+                    {/* <div className="bg-zinc-900/50 p-8 rounded-lg border border-white/5 space-y-6">
                         <h4 className="text-sm font-bold uppercase tracking-widest text-zinc-500">Tech Stack</h4>
                         <div className="flex flex-wrap gap-2">
                             {["Go", "Rust", "Node.js", "Redis", "Kafka", "Postgres", "AWS", "Kubernetes"].map(tech => (
@@ -151,7 +151,7 @@ export default function ServicesPage() {
                                 </span>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Service 4: Computer Vision */}
@@ -168,19 +168,19 @@ export default function ServicesPage() {
                         <div className="space-y-6 text-zinc-400 text-lg leading-relaxed">
                             <div>
                                 <strong className="text-zinc-200 block mb-1">Who this is for</strong>
-                                Physical operations requiring automated inspection or tracking.
+                                Industrial or logistics sites where manual visual inspection creates margin for error.
                             </div>
                             <div>
-                                <strong className="text-zinc-200 block mb-1">The Real Pain</strong>
-                                Cloud APIs are too slow or expensive for real-time video. Hardware constraints in the field are brutal.
+                                <strong className="text-zinc-200 block mb-1">The Challenge</strong>
+                                Cloud APIs often fail on latency and cost for real-time video. Hardware constraints in the field require efficient, local processing.
                             </div>
                             <div>
                                 <strong className="text-zinc-200 block mb-1">What We Build</strong>
-                                Edge-deployed inference models. Systems that run on limited compute. Robust handling of variable lighting and occlusion.
+                                Edge-deployed inference models optimized for limited compute. Robust systems handling variable lighting and occlusion in real-time.
                             </div>
                             <div className="pt-4 border-t border-zinc-800">
                                 <strong className="text-zinc-200 block mb-1">Why this approach works</strong>
-                                We optimize for the edge. We shrink models without destroying accuracy, bringing intelligence to where the data is actually generated.
+                                We bring intelligence to the data source. Optimization for the edge ensures accuracy without reliance on unstable connectivity.
                             </div>
                         </div>
                     </div>

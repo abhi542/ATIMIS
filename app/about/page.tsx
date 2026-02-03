@@ -56,15 +56,17 @@ export default function AboutPage() {
 
                 </div>
 
-                <div className="mt-24 pt-12 border-t border-white/10">
+                <section className="mt-12 border-t border-white/10 py-16 px-6 text-center">
+                    <h2 className="text-4xl font-bold mb-8">Ready to Partner With Us?</h2>
                     <Link href="/contact">
-                        <Button className="bg-white text-black hover:bg-zinc-200 font-semibold px-8 py-6 rounded-full" size="lg">
-                            Get Started
-                        </Button>
+                        <div className="inline-flex items-center justify-center px-10 py-5 bg-white text-black font-bold text-lg rounded-full hover:bg-zinc-200 transition-colors">
+                            Let's Talk
+                        </div>
                     </Link>
-                </div>
-
+                </section>
             </section>
+
         </div>
+
     );
 }

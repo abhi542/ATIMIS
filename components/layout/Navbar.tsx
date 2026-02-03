@@ -5,15 +5,24 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
+import Image from "next/image";
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 w-full z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
-      <div className="container mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="container mx-auto px-6 h-24 flex items-center justify-between">
         {/* Brand */}
-        <Link href="/" className="text-lg font-semibold tracking-tight text-white z-50" onClick={() => setIsOpen(false)}>
-          ATIMIS
+        <Link href="/" className="z-50" onClick={() => setIsOpen(false)}>
+          <Image
+            src="/logo_nobg.png"
+            alt="ATIMIS"
+            width={500}
+            height={500}
+            className="h-32 w-auto object-contain mt-2"
+            priority
+          />
         </Link>
 
         {/* Center Spacer */}

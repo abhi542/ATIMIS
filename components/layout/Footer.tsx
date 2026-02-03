@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -6,9 +7,15 @@ export function Footer() {
             <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between gap-12">
 
                 {/* Brand Column */}
-                <div className="space-y-6">
+                <div className="space-y-6 pl-4">
                     <div>
-                        <h3 className="text-white font-bold text-lg mb-1">ATIMIS</h3>
+                        <Image
+                            src="/logo_nobg.png"
+                            alt="ATIMIS"
+                            width={750}
+                            height={750}
+                            className="h-48 w-auto -mb-16 opacity-80 object-contain"
+                        />
                         <p className="text-sm text-zinc-500">Production-grade engineering.</p>
                     </div>
                 </div>

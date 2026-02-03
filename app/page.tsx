@@ -64,9 +64,9 @@ export default function Home() {
           <p className="text-sm text-zinc-600 mb-6 font-mono uppercase tracking-widest">Trusted by efficient teams at</p>
           <div className="flex flex-wrap gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
             {/* Placeholders for logos - replacing text with distinct fonts to simulate logos */}
-            <span className="text-xl font-bold text-zinc-400">ACME Corp</span>
-            <span className="text-xl font-serif text-zinc-400 italic">GlobalStatus</span>
-            <span className="text-xl font-mono text-zinc-400">NEXUS AI</span>
+            <span className="text-xl font-bold text-zinc-400">NEXUS AI</span>
+            <span className="text-xl font-serif text-zinc-400 italic">The Chess Square</span>
+            <span className="text-xl font-mono text-zinc-400">FitIQ </span>
             <span className="text-xl font-bold text-zinc-400 tracking-tighter">Stratos</span>
           </div>
         </div>

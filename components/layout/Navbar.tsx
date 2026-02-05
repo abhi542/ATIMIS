@@ -21,7 +21,6 @@ export function Navbar() {
             width={500}
             height={500}
             className="h-32 w-auto object-contain mt-2"
-            priority
           />
         </Link>
 

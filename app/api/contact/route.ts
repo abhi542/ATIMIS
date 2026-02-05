@@ -73,7 +73,7 @@ export async function POST(req: Request) {
                 attachments: [
                     {
                         filename: 'signature.png',
-                        path: process.cwd() + '/public/atimis_email_signature.png',
+                        path: 'https://www.atimis.in/atimis_email_signature.png',
                         cid: 'signature',
                         contentDisposition: 'inline',
                         contentType: 'image/png'

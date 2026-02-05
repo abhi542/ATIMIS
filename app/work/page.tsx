@@ -124,8 +124,8 @@ export default function WorkPage() {
             tech: ["Python", "LangChain (LCEL)", "Vertex AI", "Gemini / OpenAI LLMs", "Google Cloud MCP"],
             metrics: [
                 { label: "RQI Score Uplift", value: "+42%", detail: "after pipeline optimization" },
-                { label: "Hallucination Reduction", value: "↓ 68%", detail: "in production test sets" },
-                { label: "Evaluation Coverage", value: "3 Dimensions", detail: "Independent Quality Dimensions" },
+                { label: "Hallucination Reduction", value: "↓68%", detail: "in production test sets" },
+                { label: "Evaluation Coverage", value: "100%", detail: "Across Retrieval · Generation · Reasoning" },
                 { label: "Deployment Confidence", value: "90%+", detail: "answers traceable to verified sources" }
             ],
             constraint: "Enterprise teams deploying RAG systems lacked a scientific, repeatable way to measure answer reliability. \"Looks correct\" was unacceptable in regulated and knowledge-critical environments.",
@@ -145,10 +145,10 @@ export default function WorkPage() {
             descriptor: "Enterprise Material Request Governance and Compliance Platform",
             tech: ["Python", "MongoDB Atlas", "AWS", "Secure Cloud Hosting", "Github Actions"],
             metrics: [
-                { label: "Rule Enforcement Accuracy", value: "100%", detail: "(no violations in production)" },
-                { label: "Manual Review Reduction", value: "↓ 85%", detail: "reduction in manual workload" },
-                { label: "Request Processing Time", value: "↓ 60%", detail: "faster turnaround" },
-                { label: "Audit Readiness", value: "100%", detail: "Real-time compliance visibility" }
+                { label: "Rule Enforcement Accuracy", value: "100%", detail: "no violations in production" },
+                { label: "Manual Review Reduction", value: "↓85%", detail: "reduction in manual workload" },
+                { label: "Request Processing Time", value: "↓60%", detail: "faster turnaround" },
+                { label: "Audit Readiness", value: "100%", detail: "real-time compliance visibility" }
             ],
             constraint: "Material requests operated under strict yearly and departmental limits. Any over-allocation created financial exposure and audit risk.",
             failureMode: "Manual approvals and spreadsheet-driven tracking allowed inconsistent enforcement, delayed detection, and policy violations.",
@@ -167,7 +167,7 @@ export default function WorkPage() {
             descriptor: "Real-Time Data Analytics & Visualization Platform for High-Volume Workloads",
             tech: ["Python", "React", "AWS", "DataBricks", "Apache Spark"],
             metrics: [
-                { label: "Data Processing Speed", value: "4×", detail: "faster than legacy pipelines" },
+                { label: "Data Processing Speed", value: "↓60%", detail: "faster than legacy pipelines" },
                 { label: "Dashboard Load Time", value: "<2s", detail: "on large datasets" },
                 { label: "Concurrent Users", value: "5,000+", detail: "supported concurrently" },
                 { label: "Efficiency Gain", value: "+35%", detail: "operational efficiency" }
@@ -189,10 +189,10 @@ export default function WorkPage() {
             descriptor: "AI-Powered Fitness Coaching with Real-Time Form Tracking",
             tech: ["Python", "Flask", "MediaPipe", "OpenCV", "TensorFlow"],
             metrics: [
-                { label: "Pose Detection Latency", value: "25ms", detail: "on consumer devices" },
+                { label: "Pose Detection Latency", value: "↓80%", detail: "on consumer devices" },
                 { label: "Form Accuracy", value: "+37%", detail: "vs. self-guided workouts" },
-                { label: "User Retention", value: "+48%", detail: "with real-time feedback" },
-                { label: "Cloud Cost", value: "↓ 60%", detail: "via on-device inference" }
+                { label: "User Retention", value: "+55%", detail: "with real-time feedback" },
+                { label: "Cloud Cost", value: "↓25%", detail: "via on-device inference" }
             ],
             constraint: "Users needed personalized fitness coaching without gym access, while maintaining correct form to reduce injury risk using standard consumer devices.",
             failureMode: "Static workout plans and delayed feedback led to incorrect execution, reduced results, and higher injury rates.",
@@ -211,9 +211,9 @@ export default function WorkPage() {
             descriptor: "High-Precision Steering Angle Prediction for Autonomous Driving Systems",
             tech: ["Python", "TensorFlow/Keras", "OpenCV", "CNN Architecture", "PyTorch"],
             metrics: [
-                { label: "Steering Prediction", value: "94%", detail: "accuracy vs. human baseline" },
+                { label: "Steering Angle Prediction", value: "+88%", detail: "accuracy vs. human baseline" },
                 { label: "Inference Time", value: "<30ms", detail: "per frame" },
-                { label: "Training Data", value: "5×", detail: "expansion via augmentation" },
+                { label: "Training Data", value: "+400%", detail: "expansion via augmentation" },
                 { label: "Lane Stability", value: "+31%", detail: "improvement in simulation tests" }
             ],
             constraint: "Autonomous driving systems require highly accurate, real-time steering predictions to maintain safety and lane stability.",
@@ -234,8 +234,8 @@ export default function WorkPage() {
             {/* Meta Header */}
             <section className="pt-32 pb-16 px-6 border-b border-white/10 relative overflow-hidden text-center">
                 {/* Watermark */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center select-none pointer-events-none">
-                    <h1 className="text-[15vw] md:text-[18vw] font-black text-white/5 tracking-tighter leading-none">
+                <div className="absolute top-[145] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center select-none pointer-events-none">
+                    <h1 className="text-[18vw] md:text-[18vw] font-black text-white/5 tracking-tighter leading-none">
                         ATIMIS
                     </h1>
                 </div>

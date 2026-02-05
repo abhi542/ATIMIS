@@ -35,36 +35,50 @@ export async function POST(req: Request) {
                 from: process.env.EMAIL_USER,
                 to: body.email,
                 bcc: process.env.ADMIN_EMAIL, // Admin gets a hidden copy
-                subject: "We received your inquiry - ATIMIS",
+                subject: "We’ve received your inquiry — ATIMIS",
                 html: `
 <div style="font-family: sans-serif; color: #111; line-height: 1.6;">
-    <p>Hi ${body.name.split(" ")[0]},</p>
+    <p>Hi <strong>${body.name.split(" ")[0]}</strong>,</p>
     
-    <p>Thank you for reaching out to us.</p>
+    <p>Thanks for reaching out to <strong>ATIMIS.</strong></p>
     
-    <p>We’ve received your request for a discovery call. Our engineering team reviews every inquiry carefully to understand the problem space and assess alignment before moving forward.</p>
+    <p>We’ve received your request for a <strong>discovery call</strong>. Our team will review the details you shared to better understand your requirements and assess the best way forward.</p>
     
-    <p>Below are the details from your submission:</p>
+    <p><strong>Your submission summary</strong></p>
     
-    <ul style="padding-left: 20px;">
-        <li><strong>Role:</strong> ${body.role}</li>
-        <li><strong>Company:</strong> ${body.company || "N/A"}</li>
-        <li><strong>Project overview:</strong><br>
-        <span style="color: #444;">${body.message.replace(/\n/g, "<br>")}</span>
-        </li>
-        <li><strong>Timeline:</strong> ${body.timeline || "N/A"}</li>
-        <li><strong>Estimated budget range:</strong> ${body.budget}</li>
-    </ul>
+    <p>
+    <strong>Role:</strong> ${body.role}<br>
+    <strong>Company:</strong> ${body.company || "N/A"}
+    </p>
 
-    <p style="margin-top: 24px;">Within <strong>48 hours</strong>, our team will complete an initial evaluation and get back to you with next steps for a technical discussion.</p>
+    <p><strong>Project overview:</strong><br>
+    ${body.message.replace(/\n/g, "<br>")}</p>
+
+    <p>
+    <strong>Timeline:</strong> ${body.timeline || "N/A"}<br>
+    <strong>Estimated budget range:</strong> ${body.budget}
+    </p>
+
+    <p style="margin-top: 24px;">Within <strong>48 hours</strong>, we’ll complete an <strong>initial evaluation</strong> and get back to you with <strong>next steps for a technical discussion</strong>.</p>
     
-    <p>Thank you for considering ATIMIS. We look forward to reviewing your request.</p>
+    <p>Thank you for considering <strong>ATIMIS</strong>. We look forward to continuing the conversation.</p>
     
-    <p style="margin-top: 32px;">Best regards,<br>
-    <strong>Team ATIMIS</strong><br>
-    <span style="color: #666; font-size: 0.9em;">Production Grade Systems</span></p>
+    <p style="margin-top: 32px;">Best regards,</p>
+    
+    <div style="margin-top: 16px;">
+        <img src="cid:signature" alt="Team ATIMIS" style="max-width: 100%; height: auto; border: 0;">
+    </div>
 </div>
                 `,
+                attachments: [
+                    {
+                        filename: 'signature.png',
+                        path: process.cwd() + '/public/atimis_email_signature.png',
+                        cid: 'signature',
+                        contentDisposition: 'inline',
+                        contentType: 'image/png'
+                    }
+                ]
             };
 
             // Send email

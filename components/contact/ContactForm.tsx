@@ -92,7 +92,7 @@ export function ContactForm() {
                 <h3 className="text-2xl font-semibold text-white mb-2">Message Received</h3>
                 <p className="text-zinc-400">
                     Thank you for reaching out. We review every technical inquiry personally.
-                    Expect a response within 24 hours if it&apos;s a fit.
+                    Expect a response within 48 hours if it&apos;s a fit.
                 </p>
                 <Button
                     className="mt-6 bg-white text-black hover:bg-zinc-200"

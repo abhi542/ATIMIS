@@ -45,14 +45,14 @@ export function Navbar() {
 
           <div className="flex items-center gap-4">
             <Link href="/contact" className="hidden md:block">
-              <Button variant="default" className="bg-white text-black hover:bg-zinc-200 font-medium">
+              <Button variant="default" className="bg-white text-black hover:bg-zinc-200 font-medium cursor-pointer">
                 Get Started
               </Button>
             </Link>
 
             {/* Mobile Get Started (Small version if needed, or keep hidden and put in menu) - User had it visible in screenshot, but might duplicate if in menu too. I'll keep it visible as per screenshot but maybe hide on menu open? actually the menu will cover it. */}
             <Link href="/contact" className="md:hidden">
-              <Button variant="default" size="sm" className="bg-white text-black hover:bg-zinc-200 font-medium h-9 px-4 text-xs">
+              <Button variant="default" size="sm" className="bg-white text-black hover:bg-zinc-200 font-medium h-9 px-4 text-xs cursor-pointer">
                 Get Started
               </Button>
             </Link>

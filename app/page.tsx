@@ -25,12 +25,12 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
-              <Button size="lg" className="text-base px-8 py-7 rounded-full bg-white text-black hover:bg-zinc-200 font-semibold w-full sm:w-auto">
+              <Button size="lg" className="text-base px-8 py-7 rounded-full bg-white text-black hover:bg-zinc-200 font-semibold w-full sm:w-auto cursor-pointer">
                 Get Started
               </Button>
             </Link>
             <Link href="/work">
-              <Button variant="outline" size="lg" className="text-base px-8 py-7 rounded-full border-zinc-800 text-white hover:bg-zinc-900 w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="text-base px-8 py-7 rounded-full border-zinc-800 text-white hover:bg-zinc-900 w-full sm:w-auto cursor-pointer">
                 Our Work
               </Button>
             </Link>
